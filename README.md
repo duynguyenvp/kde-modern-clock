@@ -1,5 +1,7 @@
 # Modern Clock & Calendar (KDE Plasma 6 Widget)
 
+[English](README_en.md) | **Tiếng Việt**
+
 Widget đồng hồ & lịch hiện đại cho KDE Plasma 6 (hỗ trợ tùy chỉnh múi giờ, định dạng ngày giờ, phông chữ trên taskbar và lịch Âm & ngày lễ Tết Việt Nam).
 
 ## Ảnh chụp màn hình / Screenshots
