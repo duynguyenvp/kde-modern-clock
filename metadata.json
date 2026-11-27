@@ -14,7 +14,7 @@
         "License": "GPL-3.0-or-later",
         "Name": "Modern Clock & Calendar",
         "Name[vi]": "Đồng Hồ & Lịch Hiện Đại",
-        "Version": "1.0.0",
+        "Version": "1.1.0",
         "Website": "https://github.com/duynguyenvp/kde-modern-clock"
     },
     "X-Plasma-API-Minimum-Version": "6.0",

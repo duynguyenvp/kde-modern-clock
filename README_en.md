@@ -19,7 +19,7 @@ A modern digital clock and calendar widget for KDE Plasma 6 featuring customizab
   - Automatically uses the system timezone or any custom IANA timezone (`Asia/Ho_Chi_Minh`, `Asia/Tokyo`, `America/New_York`, etc.) with live validation.
 - **Date Format & Taskbar Appearance:**
   - Multiple built-in date presets plus custom format support (`dd`, `MM`, `yyyy`, `ddd`, `dddd`, `MMM`, `MMMM`, etc.) with live preview.
-  - Toggle date visibility on the panel; customize font family, font size (auto-fit panel height or manual), and bold/italic styles independently for time and date.
+  - Toggle date visibility on the panel, switch between **2 lines (stacked — default)** and **1 line (inline)** layouts with live preview, and customize font family, font size (auto-fit panel height or manual), and bold/italic styles independently for time and date.
 - **Vietnamese Lunar Calendar & Holidays:**
   - Optional Vietnamese Lunar Calendar (UTC+7 astronomical calculation) and Vietnamese holidays (New Year's Day, Lunar New Year's Eve, Tet, Hung Kings' Commemoration Day 10/3 Lunar, Reunification Day 30/4, Labor Day 1/5, National Day 2/9, Lantern Festival, Vesak, Vu Lan, Mid-Autumn Festival, 20/10, 20/11, Kitchen Gods Day, etc.).
   - Configurable first day of the week (Sunday to Saturday, defaults to Monday) with optional ISO week numbers.

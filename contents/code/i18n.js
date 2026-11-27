@@ -74,6 +74,9 @@ var STRINGS = {
         // Config Appearance
         sectionPanelPreview: "Panel Preview",
         labelSample: "Sample:",
+        labelDisplayLayout: "Panel layout:",
+        layoutTwoLines: "2 lines (stacked)",
+        layoutOneLine: "1 line (inline)",
         systemDefaultFont: "System default ({font})",
         sectionTimeFont: "Time Font",
         sectionDateFont: "Date Font",
@@ -151,6 +154,9 @@ var STRINGS = {
         // Config Appearance
         sectionPanelPreview: "Xem trước trên Panel",
         labelSample: "Mẫu:",
+        labelDisplayLayout: "Kiểu hiển thị:",
+        layoutTwoLines: "2 dòng (trên dưới)",
+        layoutOneLine: "1 dòng (ngang)",
         systemDefaultFont: "Mặc định hệ thống ({font})",
         sectionTimeFont: "Phông chữ Thời gian",
         sectionDateFont: "Phông chữ Ngày tháng",

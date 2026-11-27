@@ -10,7 +10,9 @@ MouseArea {
 
     readonly property bool isVertical: Plasmoid.formFactor === PlasmaCore.Types.Vertical
     readonly property bool isHorizontal: Plasmoid.formFactor === PlasmaCore.Types.Horizontal
-    readonly property bool useStackedLayout: isVertical || height >= Kirigami.Units.gridUnit * 2 || !root.showDateInPanel
+    readonly property bool useStackedLayout: isVertical
+        || !root.showDateInPanel
+        || (root.displayLayout !== "one_line" && height >= Kirigami.Units.gridUnit * 2)
 
     readonly property int horizontalPadding: Kirigami.Units.smallSpacing
     readonly property int verticalPadding: Math.max(2, Math.floor(Kirigami.Units.smallSpacing / 2))
@@ -141,8 +143,9 @@ MouseArea {
 
         Rectangle {
             visible: root.showDateInPanel
-            width: 1
-            height: Math.max(10, compactRoot.height * 0.45)
+            Layout.alignment: Qt.AlignVCenter
+            implicitWidth: 1
+            implicitHeight: Math.max(10, Math.round(compactRoot.height * 0.45))
             color: Kirigami.Theme.textColor
             opacity: 0.35
         }

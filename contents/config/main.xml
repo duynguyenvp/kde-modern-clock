@@ -18,6 +18,9 @@
         <entry name="showDateInPanel" type="Bool">
             <default>true</default>
         </entry>
+        <entry name="displayLayout" type="String">
+            <default>two_lines</default>
+        </entry>
         <entry name="dateFormatPreset" type="String">
             <default>dd/MM/yyyy</default>
         </entry>

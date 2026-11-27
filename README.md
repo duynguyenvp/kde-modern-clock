@@ -19,7 +19,7 @@ Widget đồng hồ & lịch hiện đại cho KDE Plasma 6 (hỗ trợ tùy ch�
   - Tự động lấy múi giờ theo hệ thống hoặc tùy chỉnh sang bất kỳ múi giờ IANA nào (`Asia/Ho_Chi_Minh`, `Asia/Tokyo`, `America/New_York`...) kèm kiểm tra hợp lệ trực tiếp.
 - **Định dạng ngày & giao diện taskbar (Date Format & Taskbar Appearance):**
   - Nhiều mẫu ngày tháng có sẵn và hỗ trợ nhập định dạng tùy chỉnh (`dd`, `MM`, `yyyy`, `ddd`, `dddd`, `MMM`, `MMMM`...) có xem trước trực tiếp.
-  - Tùy chọn hiển thị ngày trên panel; tùy chỉnh phông chữ, cỡ chữ (tự động vừa chiều cao panel hoặc chỉnh tay), kiểu chữ đậm/nghiêng riêng cho giờ và ngày.
+  - Tùy chọn hiển thị ngày trên panel, chuyển đổi kiểu hiển thị **2 dòng (trên dưới — mặc định)** hoặc **1 dòng (ngang)** có xem trước trực tiếp; tùy chỉnh phông chữ, cỡ chữ (tự động vừa chiều cao panel hoặc chỉnh tay), kiểu chữ đậm/nghiêng riêng cho giờ và ngày.
 - **Lịch Việt Nam & Ngày lễ Tết (Vietnamese Lunar Calendar & Holidays):**
   - Tùy chọn hiển thị Âm lịch Việt Nam (UTC+7, thuật toán thiên văn học) và các ngày lễ Tết Việt Nam (Tết Dương lịch, Đêm Giao thừa, Tết Nguyên Đán, Giỗ Tổ Hùng Vương 10/3 ÂL, 30/4, 1/5, Quốc khánh 2/9, Rằm tháng Giêng, Phật Đản, Vu Lan, Trung Thu, 20/10, 20/11, Ông Công Ông Táo...).
   - Tùy chỉnh ngày bắt đầu của tuần (Chủ Nhật đến Thứ Bảy, mặc định Thứ Hai) kèm tùy chọn hiển thị số tuần ISO.

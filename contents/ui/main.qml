@@ -18,6 +18,7 @@ PlasmoidItem {
     readonly property bool use24HourFormat: Plasmoid.configuration.use24HourFormat
     readonly property bool showSeconds: Plasmoid.configuration.showSeconds
     readonly property bool showDateInPanel: Plasmoid.configuration.showDateInPanel
+    readonly property string displayLayout: Plasmoid.configuration.displayLayout
     readonly property bool useCustomDateFormat: Plasmoid.configuration.useCustomDateFormat
     readonly property string dateFormatPreset: Plasmoid.configuration.dateFormatPreset
     readonly property string customDateFormat: Plasmoid.configuration.customDateFormat

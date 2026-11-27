@@ -9,6 +9,7 @@ import "../code/i18n.js" as I18n
 KCM.SimpleKCM {
     id: appearancePage
 
+    property string cfg_displayLayout: "two_lines"
     property string cfg_timeFontFamily
     property alias cfg_timeAutoFontSize: timeAutoSizeCheck.checked
     property alias cfg_timeFontSize: timeFontSizeSpin.value
@@ -60,8 +61,11 @@ KCM.SimpleKCM {
 
         Rectangle {
             Kirigami.FormData.label: I18n.tr(appearancePage.lang, "labelSample")
-            implicitWidth: Math.max(120, previewCol.implicitWidth + 24)
-            implicitHeight: previewCol.implicitHeight + 16
+            readonly property bool previewOneLine: cfg_displayLayout === "one_line"
+            readonly property real activePreviewWidth: previewOneLine ? previewRow.implicitWidth : previewCol.implicitWidth
+            readonly property real activePreviewHeight: previewOneLine ? previewRow.implicitHeight : previewCol.implicitHeight
+            implicitWidth: Math.max(120, activePreviewWidth + 24)
+            implicitHeight: activePreviewHeight + 16
             radius: Kirigami.Units.cornerRadius
             color: Qt.rgba(
                 Kirigami.Theme.textColor.r,
@@ -81,6 +85,7 @@ KCM.SimpleKCM {
                 id: previewCol
                 anchors.centerIn: parent
                 spacing: 0
+                visible: !parent.previewOneLine
 
                 QQC2.Label {
                     Layout.alignment: Qt.AlignHCenter
@@ -100,6 +105,55 @@ KCM.SimpleKCM {
                     font.italic: cfg_dateFontItalic
                     opacity: 0.85
                 }
+            }
+
+            RowLayout {
+                id: previewRow
+                anchors.centerIn: parent
+                spacing: Kirigami.Units.smallSpacing
+                visible: parent.previewOneLine
+
+                QQC2.Label {
+                    Layout.alignment: Qt.AlignVCenter
+                    text: "18:30"
+                    font.family: cfg_timeFontFamily.length > 0 ? cfg_timeFontFamily : Kirigami.Theme.defaultFont.family
+                    font.pixelSize: cfg_timeAutoFontSize ? 16 : cfg_timeFontSize
+                    font.bold: cfg_timeFontBold
+                    font.italic: cfg_timeFontItalic
+                }
+
+                Rectangle {
+                    Layout.alignment: Qt.AlignVCenter
+                    implicitWidth: 1
+                    implicitHeight: Math.max(12, Math.round((cfg_timeAutoFontSize ? 16 : cfg_timeFontSize) * 0.85))
+                    color: Kirigami.Theme.textColor
+                    opacity: 0.35
+                }
+
+                QQC2.Label {
+                    Layout.alignment: Qt.AlignVCenter
+                    text: "26/11/2026"
+                    font.family: cfg_dateFontFamily.length > 0 ? cfg_dateFontFamily : Kirigami.Theme.defaultFont.family
+                    font.pixelSize: cfg_dateAutoFontSize ? 12 : cfg_dateFontSize
+                    font.bold: cfg_dateFontBold
+                    font.italic: cfg_dateFontItalic
+                    opacity: 0.85
+                }
+            }
+        }
+
+        QQC2.ComboBox {
+            id: displayLayoutCombo
+            Kirigami.FormData.label: I18n.tr(appearancePage.lang, "labelDisplayLayout")
+            Layout.fillWidth: true
+            model: [
+                { id: "two_lines", label: I18n.tr(appearancePage.lang, "layoutTwoLines") },
+                { id: "one_line", label: I18n.tr(appearancePage.lang, "layoutOneLine") }
+            ]
+            textRole: "label"
+            currentIndex: cfg_displayLayout === "one_line" ? 1 : 0
+            onActivated: function(index) {
+                appearancePage.cfg_displayLayout = model[index].id;
             }
         }
 
