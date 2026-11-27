@@ -1,0 +1,25 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "duynguyenvp"
+            }
+        ],
+        "Category": "Date and Time",
+        "Description": "Modern digital clock and calendar widget for KDE Plasma 6 with customizable 12/24h time, timezones, date format, week start day, and Vietnamese holidays & lunar calendar.",
+        "Description[vi]": "Widget đồng hồ và lịch hiện đại cho KDE Plasma 6 hỗ trợ tuỳ chỉnh 12/24h, múi giờ, định dạng ngày, ngày bắt đầu tuần và ngày lễ Tết Việt Nam.",
+        "Icon": "preferences-system-time",
+        "Id": "com.modernclock.plasma6",
+        "License": "GPL-3.0-or-later",
+        "Name": "Modern Clock & Calendar",
+        "Name[vi]": "Đồng Hồ & Lịch Hiện Đại",
+        "Version": "1.0.0",
+        "Website": "https://github.com/duynguyenvp/kde-modern-clock"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "X-Plasma-Provides": [
+        "org.kde.plasma.time",
+        "org.kde.plasma.date"
+    ]
+}
